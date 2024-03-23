@@ -1,0 +1,33 @@
+@import "src/App.scss";
+.rating-card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5rem;
+  background-color: $primary-darkgray;
+  border-radius: 10px;
+  padding: 20px;
+  height: auto;
+  width: 50%;
+  &.light-green {
+    background-color: #53ace4;
+    color: black;
+  }
+  &.green {
+    background-color: #3fb63f;
+  }
+  &.yellow {
+    background-color: #ffd300;
+    color: black;
+  }
+  &.red {
+    background-color: #ff4c4c;
+  }
+  .rating-percent {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .count {
+    font-size: 10px;
+  }
+}
