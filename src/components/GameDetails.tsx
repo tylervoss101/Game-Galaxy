@@ -27,10 +27,10 @@ const GameDetails = () => {
     <>
       <HomeButton></HomeButton>
       <div className="game-title">{game?.name}</div>
-      <div className="left">
-        <div className="game-details-game-image-container">
+      <div className="game-details-wrapper">
+        <div className="game-details-image-container">
           <img
-            className="game-details-game-image"
+            className="game-details-image"
             src={game?.background_image}
           ></img>
           <div className="info-card">

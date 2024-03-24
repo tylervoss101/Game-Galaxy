@@ -5,14 +5,14 @@
   font-weight: bold;
 }
 
-.game-details-game-image-container {
+.game-details-image-container {
   width: 500px;
-  .game-details-game-image {
+  .game-details-image {
     width: 100%;
   }
 }
 
-.left {
+.game-details-wrapper {
   display: flex;
   flex-direction: row;
   gap: 2rem;

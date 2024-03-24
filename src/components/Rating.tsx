@@ -14,16 +14,13 @@ interface Props {
  * @returns {JSX.Element}
  */
 const Rating = ({ percent, title, count }: Props) => {
-  let color = "green";
-  if (title == "recommended") {
-    color = "green";
-  } else if (title == "meh") {
-    color = "yellow";
-  } else if (title == "skip") {
-    color = "red";
-  } else if (title == "exceptional") {
-    color = "light-green";
-  }
+  const colorMap = {
+    recommended: "green",
+    meh: "yellow",
+    skip: "red",
+    exceptional: "light-blue",
+  };
+  const color = colorMap[title] || "green";
   return (
     <div className={`rating-card ${color}`}>
       <div>
